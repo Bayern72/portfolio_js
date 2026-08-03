@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page moderna con estilo Glassmorphism">
+    <title>PORTAFOLIO JS</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logos/LOG25.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Phosphor Icons: Una librería moderna, ligera y minimalista ideal para interfaces elegantes (CDN) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Contenedor del fondo animado con la imagen -->
+    <div class="background-container"></div>
+    
+    <!-- Capa de partículas flotantes animadas por JS (Parallax) -->
+    <div class="background-particles" id="particles-container">
+        <div class="particle" data-speed="0.6" data-direction="-1" style="top: 15%; left: 10%; width: 150px; height: 150px; opacity: 0.15;"></div>
+        <div class="particle" data-speed="1.2" data-direction="1" style="top: 35%; left: 75%; width: 250px; height: 250px; opacity: 0.1;"></div>
+        <div class="particle" data-speed="0.4" data-direction="-1" style="top: 60%; left: 20%; width: 120px; height: 120px; opacity: 0.12;"></div>
+        <div class="particle" data-speed="1.5" data-direction="1" style="top: 80%; left: 85%; width: 180px; height: 180px; opacity: 0.08;"></div>
+        <div class="particle" data-speed="0.8" data-direction="-0.5" style="top: 25%; left: 85%; width: 90px; height: 90px; opacity: 0.18;"></div>
+        <div class="particle" data-speed="1.0" data-direction="0.8" style="top: 75%; left: 5%; width: 200px; height: 200px; opacity: 0.14;"></div>
+    </div>
+
+    <!-- Navegación Sticky / Flotante -->
+    <header class="glass-header sticky-header">
+        <div class="logo">
+            <img class="icon-log" src="img/logos/LOG23.png" alt="">
+        </div>
+        <nav class="glass-nav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#caracteristicas">Sobre Mí</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <a class="glass-btn primary" href="https://wa.me/573223518311">
+            Hablemos
+        </a>
+    </header>
+
+    <!-- Contenedor de contenido scrollable -->
+    <main class="content-wrapper">
+        
+        <!-- Sección 1: Hero (Inicio) -->
+        <section id="inicio" class="hero-section glass-section">
+            <!-- Video de fondo para el Hero -->
+            <video class="hero-video-bg" autoplay loop muted playsinline>
+                <source src="videos/L_Prolonga_un_poco_mas_el_mo.mp4" type="video/mp4">
+            </video>
+            <!-- Overlay oscuro semi-transparente para mejorar contraste del texto -->
+
+
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Diseño del <span>Futuro</span></h1>
+                    <p>Descubre una nueva forma de interactuar con interfaces elegantes y minimalistas utilizando Glassmorphism y flexbox.</p>
+                    <div class="hero-actions">
+                        <button class="glass-btn primary">
+                            <i class="ph ph-rocket"></i> Explorar
+                        </button>
+                        <button class="glass-btn secondary">
+                            <i class="ph ph-play-circle"></i> Ver Demo
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-cards">
+                    <div class="glass-card">
+                        <i class="ph ph-chart-polar card-icon"></i>
+                        <h3>Visualización</h3>
+                        <p>Interfaces fluidas que se adaptan a cualquier resolución gracias a Flexbox.</p>
+                    </div>
+                    <div class="glass-card">
+                        <i class="ph ph-sparkle card-icon"></i>
+                        <h3>Estética</h3>
+                        <p>Un fondo dinámico resaltado por los paneles de cristal traslúcido.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 2: Características -->
+        <section id="caracteristicas" class="features-section glass-section">
+            <div class="section-title">
+                <h2>Características <span>Premium</span></h2>
+                <p>Nuestra tecnología combina rendimiento gráfico avanzado con un estilo visual pulido.</p>
+            </div>
+            <div class="features-grid">
+                <div class="glass-card feature-card">
+                    <i class="ph ph-wind card-icon"></i>
+                    <h3>Scroll Fluido</h3>
+                    <p>El fondo se desplaza y reacciona de forma no lineal con interpolación matemática para máxima suavidad.</p>
+                </div>
+                <div class="glass-card feature-card">
+                    <i class="ph ph-palette card-icon"></i>
+                    <h3>Espectro Dinámico</h3>
+                    <p>Los colores cambian suavemente a tonos morados y cianes a medida que te adentras en la página.</p>
+                </div>
+                <div class="glass-card feature-card">
+                    <i class="ph ph-cube card-icon"></i>
+                    <h3>Parallax en Capas</h3>
+                    <p>Las partículas flotantes e imágenes de fondo se mueven en diferentes planos virtuales 3D.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="loopbranding glass-section-video">
+                <video src="videos/loopdejs.mp4" autoplay loop muted></video>
+        </div>
+
+        <!-- Sección 3: Servicios -->
+        <section id="servicios" class="services-section glass-section">
+
+            <div class="section-title">
+                <h2>Nuestros <span>Servicios</span></h2>
+                <p>Creamos experiencias memorables y preparadas para el futuro.</p>
+            </div>
+            <div class="services-layout">
+                <div class="glass-card service-main">
+                    <i class="ph ph-cpu card-icon"></i>
+                    <h3>Desarrollo a la Medida</h3>
+                    <p>Diseño y optimización de interfaces avanzadas que reducen la carga de procesamiento del navegador mediante aceleración por hardware (GPU).</p>
+                    <button class="glass-btn primary small-btn">Ver Detalles</button>
+                </div>
+                <div class="services-subgrid">
+                    <div class="glass-card service-sub">
+                        <i class="ph ph-projector-screen-chart card-icon"></i>
+                        <h4>Consultoría UX</h4>
+                        <p>Estrategias de interacción basadas en la psicología del usuario.</p>
+                    </div>
+                    <div class="glass-card service-sub">
+                        <i class="ph ph-lightning card-icon"></i>
+                        <h4>Optimización Web</h4>
+                        <p>Carga veloz y transiciones fluidas de 120 FPS sin caídas de frame.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 4: Contacto (Footer/CTA) -->
+        <section id="contacto" class="contact-section glass-section">
+            <div class="contact-card">
+                <h2>¿Listo para <span>Comenzar</span>?</h2>
+                <p>Escríbenos para agendar una demostración o resolver tus dudas. La innovación te espera.</p>
+                <form class="glass-form" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <input type="email" placeholder="Tu correo electrónico" required class="glass-input">
+                        <button type="submit" class="glass-btn primary form-btn">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <footer class="glass-footer-content">
+                <p>&copy; 2026 Glassify Inc. Todos los derechos reservados. Diseñado con pasión.</p>
+            </footer>
+        </section>
+        
+    </main>
+
+    <!-- Script de Animación de Scroll e Interpolación (Lerp) -->
+    <script>
+        let currentScroll = 0;
+        let targetScroll = 0;
+        const ease = 0.08; // Coeficiente de suavizado (menor = más suave)
+
+        // Escuchar el evento scroll con passive true para rendimiento de renderizado
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            targetScroll = docHeight > 0 ? scrollTop / docHeight : 0;
+        }, { passive: true });
+
+        function updateScrollAnimation() {
+            // Interpolación lineal (Lerp)
+            currentScroll += (targetScroll - currentScroll) * ease;
+            
+            // Umbral para detener el cálculo cuando sea imperceptible
+            if (Math.abs(targetScroll - currentScroll) < 0.0001) {
+                currentScroll = targetScroll;
+            }
+            
+            // Asignar el porcentaje suavizado al CSS
+            document.documentElement.style.setProperty('--scroll-pct', currentScroll);
+            
+            // Animar las partículas individualmente con efecto Parallax
+            const particles = document.querySelectorAll('.particle');
+            particles.forEach(particle => {
+                const speed = parseFloat(particle.dataset.speed) || 1.0;
+                const direction = parseFloat(particle.dataset.direction) || 1;
+                // Movimiento vertical según scroll
+                const translateY = currentScroll * 250 * speed * direction;
+                // Rotación leve según scroll
+                const rotate = currentScroll * 180 * (speed * 0.3);
+                particle.style.transform = `translateY(${translateY}px) rotate(${rotate}deg)`;
+            });
+            
+            requestAnimationFrame(updateScrollAnimation);
+        }
+
+        // Iniciar el ciclo de animación
+        requestAnimationFrame(updateScrollAnimation);
+    </script>
+</body>
+</html>
