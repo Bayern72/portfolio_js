@@ -589,6 +589,39 @@
     font-size: 0.9rem;
 }
 
+.img-merch-kaizen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.img-merch-kaizen img {
+    width: 940px;
+    transition: all 0.3s ease;
+}
+
+.fotomontajes-article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.fotomontajes-article h2 {
+    color: #f7f7f7;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
 /* 
    Media Queries para Responsividad (Tablets y Móviles)
 */
