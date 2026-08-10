@@ -36,12 +36,13 @@
 
     <!-- Navegación Sticky / Flotante -->
     <header class="glass-header sticky-header">
+        <div class="scroll-progress-line"></div>
         <div class="logo">
             <img class="icon-log" src="img/logos/LOG23.png" alt="">
         </div>
         <nav class="glass-nav">
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#inicio" class="active">Inicio</a></li>
                 <li><a href="#caracteristicas">Sobre Mí</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
@@ -59,7 +60,7 @@
     <main class="content-wrapper">
         
         <!-- Sección 1: Hero (Inicio) -->
-        <section id="inicio" class="hero-section glass-section">
+        <section id="inicio" class="hero-section glass-section reveal reveal-up">
             <!-- Video de fondo para el Hero -->
             <video class="hero-video-bg" autoplay loop muted playsinline>
                 <source src="videos/L_Prolonga_un_poco_mas_el_mo.mp4" type="video/mp4">
@@ -68,7 +69,7 @@
 
 
             <div class="hero">
-                <div class="hero-content">
+                <div class="hero-content reveal reveal-left stagger-1">
                     <h1>Diseño del <span>Futuro</span></h1>
                     <p>Descubre una nueva forma de interactuar con interfaces elegantes y minimalistas utilizando Glassmorphism y flexbox.</p>
                     <div class="hero-actions">
@@ -81,13 +82,13 @@
                     </div>
                 </div>
                 
-                <div class="hero-cards">
-                    <div class="glass-card">
+                <div class="hero-cards reveal reveal-right stagger-2">
+                    <div class="glass-card tilt-card">
                         <i class="ph ph-chart-polar card-icon"></i>
                         <h3>Visualización</h3>
                         <p>Interfaces fluidas que se adaptan a cualquier resolución gracias a Flexbox.</p>
                     </div>
-                    <div class="glass-card">
+                    <div class="glass-card tilt-card">
                         <i class="ph ph-sparkle card-icon"></i>
                         <h3>Estética</h3>
                         <p>Un fondo dinámico resaltado por los paneles de cristal traslúcido.</p>
@@ -97,23 +98,23 @@
         </section>
 
         <!-- Sección 2: Características -->
-        <section id="caracteristicas" class="features-section glass-section">
-            <div class="section-title">
+        <section id="caracteristicas" class="features-section glass-section reveal reveal-up">
+            <div class="section-title reveal reveal-up stagger-1">
                 <h2>Características <span>Premium</span></h2>
                 <p>Nuestra tecnología combina rendimiento gráfico avanzado con un estilo visual pulido.</p>
             </div>
             <div class="features-grid">
-                <div class="glass-card feature-card">
+                <div class="glass-card feature-card tilt-card reveal reveal-scale stagger-1">
                     <i class="ph ph-wind card-icon"></i>
                     <h3>Scroll Fluido</h3>
                     <p>El fondo se desplaza y reacciona de forma no lineal con interpolación matemática para máxima suavidad.</p>
                 </div>
-                <div class="glass-card feature-card">
+                <div class="glass-card feature-card tilt-card reveal reveal-scale stagger-2">
                     <i class="ph ph-palette card-icon"></i>
                     <h3>Espectro Dinámico</h3>
                     <p>Los colores cambian suavemente a tonos morados y cianes a medida que te adentras en la página.</p>
                 </div>
-                <div class="glass-card feature-card">
+                <div class="glass-card feature-card tilt-card reveal reveal-scale stagger-3">
                     <i class="ph ph-cube card-icon"></i>
                     <h3>Parallax en Capas</h3>
                     <p>Las partículas flotantes e imágenes de fondo se mueven en diferentes planos virtuales 3D.</p>
@@ -121,19 +122,19 @@
             </div>
         </section>
 
-        <div class="loopbranding glass-section-video">
+        <div class="loopbranding glass-section-video reveal reveal-scale">
                 <video src="videos/loopdejs.mp4" autoplay loop muted></video>
         </div>
 
         <!-- Sección 3: Branding -->
-        <section id="servicios" class="services-section glass-section">
+        <section id="servicios" class="services-section glass-section reveal reveal-up" data-brand="kaizen">
 
             <div class="services-layout">
                 
-                <div class="service-main">
+                <div class="service-main reveal reveal-left stagger-1">
                     <button class="glass-btn primary small-btn">Branding</button>
                     <h3>Proyecto 1 / Tienda de Articulos Deportivos</h3>
-                    <img src="img/logos/kaizen_prin.png" alt="" width="75%">
+                    <img src="img/logos/kaizen_prin.png" alt="Logo Kaizen" width="75%">
                     <p>Kaizen es una marca que apoya a escuelas de formación de futbol
                         profesional a integrar una identidad clara que permita resaltar
                         el crecimiento en materia de talento joven, cultura y apropiación
@@ -143,112 +144,246 @@
                     <div class="service-tools">
                         <h3>Herramientas utilizadas</h3>
                         <div class="fav-tools">
-                            <img src="img/favicons/fav_ai.png" alt="">
-                            <img src="img/favicons/fav_ps.png" alt="">
-                            <img src="img/favicons/fav_pr.png" alt="">
-                            <img src="img/favicons/fav_ae.png" alt="">
-                            <img src="img/favicons/fav_fig.png" alt="">
+                            <img src="img/favicons/fav_ai.png" alt="Illustrator" title="Adobe Illustrator">
+                            <img src="img/favicons/fav_ps.png" alt="Photoshop" title="Adobe Photoshop">
+                            <img src="img/favicons/fav_pr.png" alt="Premiere" title="Adobe Premiere">
+                            <img src="img/favicons/fav_ae.png" alt="After Effects" title="Adobe After Effects">
+                            <img src="img/favicons/fav_fig.png" alt="Figma" title="Figma">
                         </div>
                         <div class="colors-kaizen">
                             <h3>Paleta de colores</h3>
                             <div class="group-colors-kaizen">
-                                <div class="colork" style="background-color: #f7f7f7;"></div>
-                                <div class="colork" style="background-color: #45ebc0;"></div>
-                                <div class="colork" style="background-color: #3de9eb;"></div>
-                                <div class="colork" style="background-color: #1d3354;"></div>
+                                <div class="colork" style="background-color: #f7f7f7;" title="Blanco Purificado #F7F7F7" data-color="#f7f7f7"></div>
+                                <div class="colork" style="background-color: #45ebc0;" title="Turquesa Neón #45EBC0" data-color="#45ebc0"></div>
+                                <div class="colork" style="background-color: #3de9eb;" title="Cian Eléctrico #3DE9EB" data-color="#3de9eb"></div>
+                                <div class="colork" style="background-color: #1d3354;" title="Azul Profundo #1D3354" data-color="#1d3354"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="service-main img-merch-kaizen">
-                    <img src="img/kaizen_merch-Photoroom.png" alt="" width="900px">
+                <div class="service-main img-merch-kaizen reveal reveal-right tilt-card stagger-2">
+                    <img src="img/kaizen_merch-Photoroom.png" alt="Kaizen Merch" width="900px">
                 </div>
             </div>
         </section>
 
-        <section id="servicios" class="services-section glass-section">
+        <section id="proyecto-dulce-amor" class="services-section glass-section reveal reveal-up" data-brand="dulce-amor" style="background-color: rgba(247, 247, 247) !important">
 
             <div class="services-layout">
                 
-                <div class="service-main">
-                    <button class="glass-btn primary small-btn">Branding</button>
-                    <h3>Proyecto 2 / Tienda de Articulos Deportivos</h3>
-                    <img src="img/logos/kaizen_prin.png" alt="" width="75%">
-                    <p>Kaizen es una marca que apoya a escuelas de formación de futbol
-                        profesional a integrar <br> una identidad clara que permita resaltar
-                        el crecimiento en materia de talento joven, <br> cultura y apropiación
-                        del deporte local, permitinedo generar confianza en <br> comunidades 
-                        como barrios y asocioaciones que aporten de forma positiva <br> a los proyectos deportivos y carreras profesionales de las nuevas generaciones.</p>
+                <div class="service-main reveal reveal-left stagger-1">
+                    <button class="glass-btn primary small-btn" style="color: #0e0d0d; border: 1px solid #0e0d0d;">Branding</button>
+                    <h3 style="color: #0e0d0d;">Proyecto 2 / Cafeteria</h3>
+                    <img src="img/logos/dulce_amor_log_prin.png" alt="Logo Dulce Amor" width="75%">
+                    <p style="color: #0e0d0d;">Dulce Amor es un emprendimiento enriquecedor por sus grandes
+                        tradiciones en el arte culinario, preparación de productos de
+                        forma artesanal logrando encontrar sabores únicos y saludables,
+                        creando experiencias inolvidables y brindarles a sus clientes 
+                        momentos dulces y agradables para salir de la rutina y degustar
+                        productos nuevos listos para embalsamar el paladar.</p>
                     <div class="service-tools">
-                        <h3>Herramientas utilizadas</h3>
+                        <h3 style="color: #ffffff;">Herramientas utilizadas</h3>
                         <div class="fav-tools">
-                            <img src="img/favicons/fav_ai.png" alt="">
-                            <img src="img/favicons/fav_ps.png" alt="">
-                            <img src="img/favicons/fav_pr.png" alt="">
-                            <img src="img/favicons/fav_ae.png" alt="">
-                            <img src="img/favicons/fav_fig.png" alt="">
+                            <img src="img/favicons/fav_ai.png" alt="Illustrator" title="Adobe Illustrator">
+                            <img src="img/favicons/fav_ps.png" alt="Photoshop" title="Adobe Photoshop">
+                            <img src="img/favicons/fav_pr.png" alt="Premiere" title="Adobe Premiere">
+                            <img src="img/favicons/fav_ae.png" alt="After Effects" title="Adobe After Effects">
+                            <img src="img/favicons/fav_fig.png" alt="Figma" title="Figma">
                         </div>
-                        <div class="colors-kaizen">
-                            <h3>Paleta de colores</h3>
-                            <div class="group-colors-kaizen">
-                                <div class="colork" style="background-color: #f7f7f7;"></div>
-                                <div class="colork" style="background-color: #45ebc0;"></div>
-                                <div class="colork" style="background-color: #3de9eb;"></div>
-                                <div class="colork" style="background-color: #1d3354;"></div>
+                        <div class="colors-d-amor">
+                            <h3 style="color: #ffffff;">Paleta de colores</h3>
+                            <div class="group-colors-d-amor">
+                                <div class="colord-m" style="background-color: #3d2314;" title="Café Artesanal #3D2314" data-color="#3d2314"></div>
+                                <div class="colord-m" style="background-color: #f4c2c2;" title="Rosa Pastel #F4C2C2" data-color="#f4c2c2"></div>
+                                <div class="colord-m" style="background-color: #fff8e7;" title="Crema Dulce #FFF8E7" data-color="#fff8e7"></div>
+                                <div class="colord-m" style="background-color: #d4af37;" title="Dorado Calido #D4AF37" data-color="#d4af37"></div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="service-main img-merch-kaizen reveal reveal-right tilt-card stagger-2">
+                    <img src="img/mockup_dulce_amor.png" alt="Dulce Amor Mockup" width="920px">
                 </div>
             </div>
         </section>
 
-        <div class="loopbranding glass-section-video">
-                <video src="videos/loopdejs.mp4" autoplay loop muted></video>
-        </div>
+        <section id="proyecto-nexo" class="services-section glass-section reveal reveal-up" data-brand="nexo" style="background-color: rgba(34, 34, 34, 0.4); backdrop-filter: blur(24px);">
 
-        <section id="servicios" class="services-section glass-section">
-
-            <div class="services-layout fotomontajes-article">
-
-                <div class="title-section-projects">
-                    <h2>EDICIÓN DE FOTOMONTAJES</h4>
-                </div>
+            <div class="services-layout">
                 
-                <div class="service-main">
-                    <button class="glass-btn primary small-btn">Fotografía</button>
-                    <h3>Proyecto 2 / Tienda de Articulos Deportivos</h3>
-                    <img src="img/logos/kaizen_prin.png" alt="" width="75%">
-                    <p>Kaizen es una marca que apoya a escuelas de formación de futbol
-                        profesional a integrar <br> una identidad clara que permita resaltar
-                        el crecimiento en materia de talento joven, <br> cultura y apropiación
-                        del deporte local, permitinedo generar confianza en <br> comunidades 
-                        como barrios y asocioaciones que aporten de forma positiva <br> a los proyectos deportivos y carreras profesionales de las nuevas generaciones.</p>
+                <div class="service-main reveal reveal-left stagger-1">
+                    <button class="glass-btn primary small-btn" style="color: #f7f7f7; border: 1px solid #f7f7f7;">Branding</button>
+                    <h3 style="color: #f7f7f7;">Proyecto 3 / Productora Creativa Audiovisual</h3>
+                    <img src="img/logos/nexo_visual_logo_hor.png" alt="Nexo Visual Logo" width="75%">
+                    <p style="color: #f7f7f7;">Nexo Visual es una productora creativa audiovisual
+                        especializada en la creación de contenido innovador y de alta
+                        calidad para plataformas digitales y medios tradicionales.</p>
                     <div class="service-tools">
-                        <h3>Herramientas utilizadas</h3>
+                        <h3 style="color: #f7f7f7;">Herramientas utilizadas</h3>
                         <div class="fav-tools">
-                            <img src="img/favicons/fav_ai.png" alt="">
-                            <img src="img/favicons/fav_ps.png" alt="">
-                            <img src="img/favicons/fav_pr.png" alt="">
-                            <img src="img/favicons/fav_ae.png" alt="">
-                            <img src="img/favicons/fav_fig.png" alt="">
+                            <img src="img/favicons/fav_ai.png" alt="Illustrator" title="Adobe Illustrator">
+                            <img src="img/favicons/fav_ps.png" alt="Photoshop" title="Adobe Photoshop">
+                            <img src="img/favicons/fav_pr.png" alt="Premiere" title="Adobe Premiere">
+                            <img src="img/favicons/fav_ae.png" alt="After Effects" title="Adobe After Effects">
+                            <img src="img/favicons/fav_fig.png" alt="Figma" title="Figma">
                         </div>
-                        <div class="colors-kaizen">
-                            <h3>Paleta de colores</h3>
-                            <div class="group-colors-kaizen">
-                                <div class="colork" style="background-color: #f7f7f7;"></div>
-                                <div class="colork" style="background-color: #45ebc0;"></div>
-                                <div class="colork" style="background-color: #3de9eb;"></div>
-                                <div class="colork" style="background-color: #1d3354;"></div>
+                        <div class="color-box-nexo">
+                            <h3 style="color: #f7f7f7;">Paleta de colores</h3>
+                            <div class="group-colors-nexo">
+                                <div class="color-nexo" style="background-color: #ed6658;" title="Coral Vivo #ED6658" data-color="#ed6658"></div>
+                                <div class="color-nexo" style="background-color: #545354;" title="Gris Grafito #545354" data-color="#545354"></div>
+                                <div class="color-nexo" style="background-color: #d9c6a5;" title="Arena Calida #D9C6A5" data-color="#d9c6a5"></div>
+                                <div class="color-nexo" style="background-color: #f2efea;" title="Blanco Marfil #F2EFEA" data-color="#f2efea"></div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="service-main img-merch-kaizen reveal reveal-right tilt-card stagger-2">
+                    <img src="img/mockup_dulce_amor.png" alt="Nexo Visual Production Mockup" width="920px">
+                </div>
+            </div>
+        </section>
+
+        <div class="loopbranding glass-section-video reveal reveal-scale">
+                <video src="videos/loopdejs.mp4" autoplay loop muted></video>
+        </div>
+
+        <section id="proyecto-nexo" class="services-section glass-section reveal reveal-up" data-brand="nexo" style="background-color: rgba(34, 34, 34, 0.4); backdrop-filter: blur(24px);">
+
+            <div class="services-layout">
+                
+                <!-- Módulo de Baraja de Cartas 3D (Brawls Stars / Clash Royale Style) -->
+                <div class="service-main card-deck-wrapper reveal reveal-right stagger-2">
+                    <div class="deck-aura-glow"></div>
+                    
+                    <!-- Pila de Cartas 3D -->
+                    <div class="card-deck-container" id="fotomontaje-deck">
+                        
+                        <!-- Carta 1: Composición Final -->
+                        <article class="gold-card tilt-card active" data-index="0">
+                            <div class="card-header-badge">
+                                <span class="rarity-tag epic"><i class="ph ph-star-fill"></i> ÉPICA 5★</span>
+                                <span class="card-level">LVL 99</span>
+                            </div>
+                            <div class="card-image-wrapper">
+                                <img src="img/fotomontaje/composición-fotomontaje-final.jpg" alt="Composición Fotomontaje Final">
+                                <div class="gold-shimmer-sweep"></div>
+                                <div class="sparkles-container">
+                                    <span class="sparkle s1">✦</span>
+                                    <span class="sparkle s2">✧</span>
+                                    <span class="sparkle s3">✦</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <h4 class="card-title">Composición Final</h4>
+                                <div class="card-stats">
+                                    <span><i class="ph ph-lightning"></i> Arte Audiovisual</span>
+                                    <span class="power-rating">100% FX</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Carta 2: Desenlazados -->
+                        <article class="gold-card tilt-card next" data-index="1">
+                            <div class="card-header-badge">
+                                <span class="rarity-tag legendary"><i class="ph ph-crown"></i> LEGENDARIA</span>
+                                <span class="card-level">LVL MAX</span>
+                            </div>
+                            <div class="card-image-wrapper">
+                                <img src="img/fotomontaje/DESENLAZADOS-_2_.jpg" alt="Desenlazados Fotomontaje">
+                                <div class="gold-shimmer-sweep"></div>
+                                <div class="sparkles-container">
+                                    <span class="sparkle s1">✦</span>
+                                    <span class="sparkle s2">✧</span>
+                                    <span class="sparkle s3">✦</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <h4 class="card-title">Desenlazados</h4>
+                                <div class="card-stats">
+                                    <span><i class="ph ph-sparkle"></i> Edición Conceptual</span>
+                                    <span class="power-rating">98% FX</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Carta 3: Seres de Otro Mundo -->
+                        <article class="gold-card tilt-card stacked-back" data-index="2">
+                            <div class="card-header-badge">
+                                <span class="rarity-tag mythical"><i class="ph ph-planet"></i> MÍTICA</span>
+                                <span class="card-level">LVL 99</span>
+                            </div>
+                            <div class="card-image-wrapper">
+                                <img src="img/fotomontaje/SERESDEOTROMUNDO.jpg" alt="Seres de Otro Mundo">
+                                <div class="gold-shimmer-sweep"></div>
+                                <div class="sparkles-container">
+                                    <span class="sparkle s1">✦</span>
+                                    <span class="sparkle s2">✧</span>
+                                    <span class="sparkle s3">✦</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <h4 class="card-title">Seres de Otro Mundo</h4>
+                                <div class="card-stats">
+                                    <span><i class="ph ph-alien"></i> VFX Fantasía</span>
+                                    <span class="power-rating">99% FX</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Carta 4: Un Festín de Oro -->
+                        <article class="gold-card tilt-card prev" data-index="3">
+                            <div class="card-header-badge">
+                                <span class="rarity-tag chromatic"><i class="ph ph-diamonds-four"></i> CROMÁTICA</span>
+                                <span class="card-level">ULTRA</span>
+                            </div>
+                            <div class="card-image-wrapper">
+                                <img src="img/fotomontaje/UNFESTINDEORO.jpg" alt="Un Festín de Oro">
+                                <div class="gold-shimmer-sweep"></div>
+                                <div class="sparkles-container">
+                                    <span class="sparkle s1">✦</span>
+                                    <span class="sparkle s2">✧</span>
+                                    <span class="sparkle s3">✦</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <h4 class="card-title">Un Festín de Oro</h4>
+                                <div class="card-stats">
+                                    <span><i class="ph ph-trophy"></i> Master Composition</span>
+                                    <span class="power-rating">100% GOLD</span>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <!-- Controles de Navegación de la Baraja -->
+                    <div class="deck-controls">
+                        <button class="deck-btn prev-card-btn" id="deck-prev-btn" aria-label="Carta Anterior">
+                            <i class="ph ph-caret-left"></i>
+                        </button>
+                        <div class="deck-pagination" id="deck-pagination">
+                            <span class="page-dot active" data-target="0"></span>
+                            <span class="page-dot" data-target="1"></span>
+                            <span class="page-dot" data-target="2"></span>
+                            <span class="page-dot" data-target="3"></span>
+                        </div>
+                        <button class="deck-btn next-card-btn" id="deck-next-btn" aria-label="Carta Siguiente">
+                            <i class="ph ph-caret-right"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="deck-hint">
+                        <i class="ph ph-arrows-left-right"></i> Haz scroll, usa las flechas o arrastra para conectar con las cartas
+                    </div>
+                </div>
+
             </div>
         </section>
 
         <!-- Sección 4: Contacto (Footer/CTA) -->
-        <section id="contacto" class="contact-section glass-section">
-            <div class="contact-card">
+        <section id="contacto" class="contact-section glass-section reveal reveal-up">
+            <div class="contact-card tilt-card reveal reveal-scale stagger-1">
                 <h2>¿Listo para <span>Comenzar</span>?</h2>
                 <p>Escríbenos para agendar una demostración o resolver tus dudas. La innovación te espera.</p>
                 <form class="glass-form" onsubmit="event.preventDefault();">
@@ -265,48 +400,219 @@
         
     </main>
 
-    <!-- Script de Animación de Scroll e Interpolación (Lerp) -->
+    <!-- Motor de Animación L99 UX/UI (Lerp, Scroll Reveal, 3D Tilt & Micro-Interactions) -->
     <script>
-        let currentScroll = 0;
-        let targetScroll = 0;
-        const ease = 0.08; // Coeficiente de suavizado (menor = más suave)
+        document.addEventListener('DOMContentLoaded', () => {
+            let currentScroll = 0;
+            let targetScroll = 0;
+            const ease = 0.08; // Coeficiente Lerp (ultra suave)
 
-        // Escuchar el evento scroll con passive true para rendimiento de renderizado
-        window.addEventListener('scroll', () => {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            targetScroll = docHeight > 0 ? scrollTop / docHeight : 0;
-        }, { passive: true });
-
-        function updateScrollAnimation() {
-            // Interpolación lineal (Lerp)
-            currentScroll += (targetScroll - currentScroll) * ease;
-            
-            // Umbral para detener el cálculo cuando sea imperceptible
-            if (Math.abs(targetScroll - currentScroll) < 0.0001) {
-                currentScroll = targetScroll;
-            }
-            
-            // Asignar el porcentaje suavizado al CSS
-            document.documentElement.style.setProperty('--scroll-pct', currentScroll);
-            
-            // Animar las partículas individualmente con efecto Parallax
-            const particles = document.querySelectorAll('.particle');
-            particles.forEach(particle => {
-                const speed = parseFloat(particle.dataset.speed) || 1.0;
-                const direction = parseFloat(particle.dataset.direction) || 1;
-                // Movimiento vertical según scroll
-                const translateY = currentScroll * 250 * speed * direction;
-                // Rotación leve según scroll
-                const rotate = currentScroll * 180 * (speed * 0.3);
-                particle.style.transform = `translateY(${translateY}px) rotate(${rotate}deg)`;
+            // 1. IntersectionObserver para Revelado por Scroll (Scroll Reveal)
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, {
+                threshold: 0.12,
+                rootMargin: '0px 0px -40px 0px'
             });
-            
-            requestAnimationFrame(updateScrollAnimation);
-        }
 
-        // Iniciar el ciclo de animación
-        requestAnimationFrame(updateScrollAnimation);
+            document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+            // 2. Motor 3D Tilt y Destello Especular en Tarjetas y Mockups (.tilt-card)
+            const tiltCards = document.querySelectorAll('.tilt-card');
+            tiltCards.forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    
+                    const rotateX = ((y - centerY) / centerY) * -10;
+                    const rotateY = ((x - centerX) / centerX) * 10;
+                    
+                    const mouseXPct = (x / rect.width) * 100;
+                    const mouseYPct = (y / rect.height) * 100;
+                    
+                    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1)`;
+                    card.style.setProperty('--mouse-x', `${mouseXPct}%`);
+                    card.style.setProperty('--mouse-y', `${mouseYPct}%`);
+                });
+
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+                });
+            });
+
+            // 3. Monitoreo de Scroll y Navegación Activa
+            window.addEventListener('scroll', () => {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                targetScroll = docHeight > 0 ? scrollTop / docHeight : 0;
+                
+                // Actualizar resaltado de menú
+                const sections = document.querySelectorAll('section[id]');
+                let currentSectionId = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 220;
+                    if (window.scrollY >= sectionTop) {
+                        currentSectionId = section.getAttribute('id');
+                    }
+                });
+
+                if (currentSectionId) {
+                    document.querySelectorAll('.glass-nav a').forEach(a => {
+                        a.classList.remove('active');
+                        if (a.getAttribute('href') === `#${currentSectionId}` || 
+                           (currentSectionId.startsWith('proyecto-') && a.getAttribute('href') === '#servicios') ||
+                           (currentSectionId === 'fotomontajes' && a.getAttribute('href') === '#servicios')) {
+                            a.classList.add('active');
+                        }
+                    });
+                }
+            }, { passive: true });
+
+            // 5. Lógica de la Baraja 3D de Cartas Fotomontaje (Clash Royale / Brawl Stars Style)
+            function initCardDeck() {
+                const deck = document.getElementById('fotomontaje-deck');
+                if (!deck) return;
+                
+                const cards = Array.from(deck.querySelectorAll('.gold-card'));
+                const dots = Array.from(document.querySelectorAll('#deck-pagination .page-dot'));
+                const prevBtn = document.getElementById('deck-prev-btn');
+                const nextBtn = document.getElementById('deck-next-btn');
+                let currentIndex = 0;
+                const totalCards = cards.length;
+                let isAnimating = false;
+
+                function updateDeck(newIndex) {
+                    if (isAnimating) return;
+                    isAnimating = true;
+                    
+                    currentIndex = (newIndex + totalCards) % totalCards;
+
+                    cards.forEach((card, i) => {
+                        card.classList.remove('active', 'next', 'prev', 'stacked-back');
+                        
+                        const diff = (i - currentIndex + totalCards) % totalCards;
+                        
+                        if (diff === 0) {
+                            card.classList.add('active');
+                        } else if (diff === 1) {
+                            card.classList.add('next');
+                        } else if (diff === totalCards - 1) {
+                            card.classList.add('prev');
+                        } else {
+                            card.classList.add('stacked-back');
+                        }
+                    });
+
+                    dots.forEach((dot, i) => {
+                        dot.classList.toggle('active', i === currentIndex);
+                    });
+
+                    setTimeout(() => {
+                        isAnimating = false;
+                    }, 400);
+                }
+
+                // Eventos Click en Botones
+                if (prevBtn) prevBtn.addEventListener('click', () => updateDeck(currentIndex - 1));
+                if (nextBtn) nextBtn.addEventListener('click', () => updateDeck(currentIndex + 1));
+
+                // Click en Dots de Paginación
+                dots.forEach((dot, i) => {
+                    dot.addEventListener('click', () => updateDeck(i));
+                });
+
+                // Click directo en cualquier carta para traerla al frente
+                cards.forEach((card, i) => {
+                    card.addEventListener('click', () => {
+                        if (i !== currentIndex) {
+                            updateDeck(i);
+                        }
+                    });
+                });
+
+                // Navegación por Scroll Wheel sobre la baraja
+                let wheelCooldown = false;
+                deck.addEventListener('wheel', (e) => {
+                    e.preventDefault();
+                    if (wheelCooldown) return;
+                    
+                    if (e.deltaY > 0 || e.deltaX > 0) {
+                        updateDeck(currentIndex + 1);
+                    } else if (e.deltaY < 0 || e.deltaX < 0) {
+                        updateDeck(currentIndex - 1);
+                    }
+                    
+                    wheelCooldown = true;
+                    setTimeout(() => { wheelCooldown = false; }, 350);
+                }, { passive: false });
+
+                // Soporte para Arrastre (Drag / Touch Swipe)
+                let startX = 0;
+                let isDragging = false;
+
+                const handleStart = (x) => {
+                    startX = x;
+                    isDragging = true;
+                };
+
+                const handleEnd = (x) => {
+                    if (!isDragging) return;
+                    isDragging = false;
+                    const diffX = x - startX;
+                    if (Math.abs(diffX) > 35) {
+                        if (diffX < 0) {
+                            updateDeck(currentIndex + 1);
+                        } else {
+                            updateDeck(currentIndex - 1);
+                        }
+                    }
+                };
+
+                deck.addEventListener('mousedown', (e) => handleStart(e.clientX));
+                window.addEventListener('mouseup', (e) => handleEnd(e.clientX));
+
+                deck.addEventListener('touchstart', (e) => handleStart(e.touches[0].clientX), { passive: true });
+                deck.addEventListener('touchend', (e) => handleEnd(e.changedTouches[0].clientX));
+
+                // Inicializar primera carta
+                updateDeck(0);
+            }
+
+            initCardDeck();
+
+            // 4. Ciclo de Animaciones Continuas por Lerp Frame
+            function updateScrollAnimation() {
+                currentScroll += (targetScroll - currentScroll) * ease;
+                if (Math.abs(targetScroll - currentScroll) < 0.0001) {
+                    currentScroll = targetScroll;
+                }
+
+                // Asignar el porcentaje suavizado al CSS
+                document.documentElement.style.setProperty('--scroll-pct', currentScroll);
+
+                // Animar partículas de fondo (Parallax)
+                const particles = document.querySelectorAll('.particle');
+                particles.forEach(particle => {
+                    const speed = parseFloat(particle.dataset.speed) || 1.0;
+                    const direction = parseFloat(particle.dataset.direction) || 1;
+                    const translateY = currentScroll * 280 * speed * direction;
+                    const rotate = currentScroll * 180 * (speed * 0.4);
+                    particle.style.transform = `translateY(${translateY}px) rotate(${rotate}deg)`;
+                });
+
+                requestAnimationFrame(updateScrollAnimation);
+            }
+
+            requestAnimationFrame(updateScrollAnimation);
+        });
     </script>
 </body>
 </html>
